@@ -1,0 +1,24 @@
+/* Reset degli stili del body e del margin della pagina */
+body, html {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Imposta il container a occupare l'intera pagina */
+  .container {
+    width: 100vw; /* 100% della larghezza della finestra del browser */
+    height: 100vh; /* 100% dell'altezza della finestra del browser */
+    overflow: hidden; /* Nasconde l'eventuale overflow */
+    position: relative; /* Posizione relativa per posizionare l'immagine */
+  }
+  
+  /* Stili per l'immagine di sfondo */
+  .container img {
+    width: 100%; /* Occupa tutta la larghezza del container */
+    height: 100%; /* Occupa tutta l'altezza del container */
+    object-fit: cover; /* Imposta l'immagine per coprire l'intero container mantenendo le proporzioni */
+    position: absolute; /* Posizione assoluta per coprire l'intero container */
+    top: 0; /* Allineamento in alto */
+    left: 0; /* Allineamento a sinistra */
+  }
+  
