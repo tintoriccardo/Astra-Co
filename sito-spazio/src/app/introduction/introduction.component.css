@@ -1,24 +1,73 @@
-/* Reset degli stili del body e del margin della pagina */
 body, html {
-    margin: 0;
-    padding: 0;
-  }
+  margin: 0;
+  padding: 0;
   
-  /* Imposta il container a occupare l'intera pagina */
-  .container {
-    width: 100vw; /* 100% della larghezza della finestra del browser */
-    height: 100vh; /* 100% dell'altezza della finestra del browser */
-    overflow: hidden; /* Nasconde l'eventuale overflow */
-    position: relative; /* Posizione relativa per posizionare l'immagine */
-  }
+}
+@font-face {
+  font-family: starwars;
+  src: url("../../assets/font/spaceage.ttf"); 
+
+}
+.container {
+  width: 100vw; /* 100% della larghezza della finestra del browser */
+  height: 100vh; /* 100% dell'altezza della finestra del browser */
+  overflow: hidden; /* Nasconde l'eventuale overflow */
+  position: relative; /* Posizione relativa per posizionare l'immagine */
+  z-index: 1;
+}
+
+ 
+
+.text {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(166, 0, 255); /* Cambia il colore del testo se necessario */
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  z-index: 2; /* Assicura che il testo sia sopra il video */
+  text-align: center; /* Allinea il testo al centro */
+  font-family: starwars;
   
-  /* Stili per l'immagine di sfondo */
-  .container img {
-    width: 100%; /* Occupa tutta la larghezza del container */
-    height: 100%; /* Occupa tutta l'altezza del container */
-    object-fit: cover; /* Imposta l'immagine per coprire l'intero container mantenendo le proporzioni */
-    position: absolute; /* Posizione assoluta per coprire l'intero container */
-    top: 0; /* Allineamento in alto */
-    left: 0; /* Allineamento a sinistra */
-  }
+}
+.text2{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(255, 151, 236); /* Cambia il colore del testo se necessario */
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  z-index: 2; /* Assicura che il testo sia sopra il video */
+  text-align: center; /* Allinea il testo al centro */
+  font-family: starwars;
+  font-size: large;
   
+
+}
+.text4 {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(166, 0, 255); /* Cambia il colore del testo se necessario */
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  z-index: 2; /* Assicura che il testo sia sopra il video */
+  text-align: center; /* Allinea il testo al centro */
+  font-family: starwars;
+  
+}
+.text3 {
+
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(255, 157, 237); /* Cambia il colore del testo se necessario */
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  z-index: 2; /* Assicura che il testo sia sopra il video */
+  text-align: center; /* Allinea il testo al centro */
+  font-family: starwars;
+  font-size: large;
+  
+}
+

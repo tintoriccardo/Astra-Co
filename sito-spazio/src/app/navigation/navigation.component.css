@@ -1,5 +1,11 @@
+@font-face {
+  font-family: starwars;
+  src: url("../../assets/font/spaceage.ttf"); 
+
+}
+
 body {
-    font-family: 'Raleway', sans-serif;
+    
     background-image: radial-gradient(circle at center, #899Dc4, #495D84);
     background-size: cover;
     background-repeat: no-repeat;
@@ -10,35 +16,36 @@ body {
     align-items: center;
     background: radial-gradient(ellipse at bottom, #1b2735, #090a0f);
     font-weight: 300;
-       
+ 
   }
 
   .container {
-    width: 100vw; /* 100% della larghezza della finestra del browser */
-    height: 35vh; /* 100% dell'altezza della finestra del browser */
-    background-color: #000; /* Sfondo nero */
-    display: flex; /* Imposta il display a flessibile per il centrare il contenuto */
-    justify-content: center; /* Centra orizzontalmente il contenuto */
-    align-items: center; /* Centra verticalmente il contenuto */
-    color: #fff; /* Colore del testo bianco */
+    font-family: starwars;
+    width: 100vw; 
+    height: 35vh; 
+    background-color: #000; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    color: #fff; 
     
   }
 
-  @font-face {
-    font-family:'star-wars';
-    src: url('../../assets/font/StarJediRounded-jW3R.ttf'); 
   
-}
+
+
 
   h1 {
     font-size: 2rem;
     text-align: center;
-    font-family:'star-wars', sans-serif;
-    position: absolute; /* Imposta la posizione assoluta */
-    top: 20%; /* Posiziona il titolo a metà della pagina */
+    font-family: starwars;
+    color: #bb00ff;
+    text-shadow: 0 0 10px rgba(0, 255, 229, 0.8);
+    position: absolute; 
+    top: 16%; 
     left: 15%;
-    transform: translate(-50%, -50%); /* Centra il titolo rispetto al suo contenitore */
-    z-index: 200; /* Imposta un valore di z-index superiore rispetto alla navbar */
+    transform: translate(-50%, -50%); 
+    z-index: 200; 
   }
   .all {
     display: flex;
@@ -72,7 +79,7 @@ body {
     border-radius: 50%; /* Imposto il border-radius al 50% per ottenere forme circolari */
     transform-style: preserve-3d;
     border: 1px solid #fff;
-    box-shadow: 0 0 20px 5px rgba(100, 100, 255, .4);
+    box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.4);
     opacity: 0;
     transition: all .3s ease;
     transition-delay: 1s;
@@ -98,8 +105,8 @@ body {
     left: 5px;
     position: absolute;
     will-change: transform;
-    color: #fff;
-    text-shadow: 0 0 5px rgba(100, 100, 255, .6)
+    color: #e19ff1;
+    text-shadow: 0 0 5px rgba(183, 0, 255, 0.6)
     
   }
   .lefter {
@@ -126,14 +133,14 @@ body {
   .explainer {
     font-weight: 300;
     font-size: 2rem;
-    color: #fff;
+    color: #ce66cd;
     transition: all .6s ease;
     width: 100%;
     height: 100%;
-    background-color: #303050;
+    background-color: #560065;
     background-image: radial-gradient(circle at center top, #cce, #33a);
-    border-radius: 50%; /* Imposto il border-radius al 50% per ottenere una forma circolare */
-    text-shadow: 0 0 10px rgba(255, 255, 255, .8);
+    border-radius: 50%; 
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
     display: flex;
     justify-content: center;
     align-items: center;
