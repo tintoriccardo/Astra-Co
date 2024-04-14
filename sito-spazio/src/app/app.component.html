@@ -1,2 +1,21 @@
-<app-navigation></app-navigation>
-<app-introduction></app-introduction>
+<ng-template [ngIf]="pagina === 'welcome'">
+    <app-navigation (mandaDatiEvento)="onRiceviDati($event)" (mandaDatiEvento2)="onRiceviDati2($event)" (mandaDatiEvento3)="onRiceviDati3($event)" (mandaDatiEvento4)="onRiceviDati4($event)" (mandaDatiEvento5)="onRiceviDati5($event)" ></app-navigation>
+    <app-introduction></app-introduction>
+</ng-template>
+<ng-template [ngIf]="pagina === 'biglietti'">
+    <app-navigation (mandaDatiEvento)="onRiceviDati($event)" (mandaDatiEvento2)="onRiceviDati2($event)" (mandaDatiEvento3)="onRiceviDati3($event)" (mandaDatiEvento4)="onRiceviDati4($event)" (mandaDatiEvento5)="onRiceviDati5($event)"></app-navigation>
+    <app-list></app-list>
+</ng-template>
+<ng-template [ngIf]="pagina === 'Razzo'">
+    <app-navigation (mandaDatiEvento)="onRiceviDati($event)" (mandaDatiEvento2)="onRiceviDati2($event)" (mandaDatiEvento3)="onRiceviDati3($event)" (mandaDatiEvento4)="onRiceviDati4($event)" (mandaDatiEvento5)="onRiceviDati5($event)"></app-navigation>
+  <app-razzo></app-razzo>
+</ng-template>
+<ng-template [ngIf]="pagina === 'Marte'">
+    <app-navigation (mandaDatiEvento)="onRiceviDati($event)" (mandaDatiEvento2)="onRiceviDati2($event)" (mandaDatiEvento3)="onRiceviDati3($event)" (mandaDatiEvento4)="onRiceviDati4($event)" (mandaDatiEvento5)="onRiceviDati5($event)"></app-navigation>
+  <app-marte></app-marte>
+</ng-template>
+<ng-template [ngIf]="pagina === 'Luna'">
+    <app-navigation (mandaDatiEvento)="onRiceviDati($event)" (mandaDatiEvento2)="onRiceviDati2($event)" (mandaDatiEvento3)="onRiceviDati3($event)" (mandaDatiEvento4)="onRiceviDati4($event)" (mandaDatiEvento5)="onRiceviDati5($event)"></app-navigation>
+  <app-luna></app-luna>
+</ng-template>
+<router-outlet />

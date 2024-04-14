@@ -1,7 +1,6 @@
 body, html {
   margin: 0;
   padding: 0;
-  
 }
 @font-face {
   font-family: starwars;
@@ -9,10 +8,10 @@ body, html {
 
 }
 .container {
-  width: 100vw; /* 100% della larghezza della finestra del browser */
-  height: 100vh; /* 100% dell'altezza della finestra del browser */
-  overflow: hidden; /* Nasconde l'eventuale overflow */
-  position: relative; /* Posizione relativa per posizionare l'immagine */
+  width: 100vw; 
+  height: 100vh; 
+  overflow: hidden;
+  position: relative; 
   z-index: 1;
 }
 
@@ -28,7 +27,6 @@ body, html {
   z-index: 2; /* Assicura che il testo sia sopra il video */
   text-align: center; /* Allinea il testo al centro */
   font-family: starwars;
-  
 }
 .text2{
   position: absolute;
@@ -40,7 +38,7 @@ body, html {
   z-index: 2; /* Assicura che il testo sia sopra il video */
   text-align: center; /* Allinea il testo al centro */
   font-family: starwars;
-  font-size: large;
+  font-size: 22px;
   
 
 }
@@ -67,7 +65,13 @@ body, html {
   z-index: 2; /* Assicura che il testo sia sopra il video */
   text-align: center; /* Allinea il testo al centro */
   font-family: starwars;
-  font-size: large;
-  
+  font-size: 22px;
+ 
 }
 
+span {
+  font-family: starwars;
+  font-size: 25px;
+  color: white;
+  text-shadow: 0 0 0.05em #fff, 0 0 0.2em #b705fe, 0 0 0.3em #9605fe;
+  }

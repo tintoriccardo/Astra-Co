@@ -1,0 +1,25 @@
+<br>
+<div class="elementi">
+    <div class="card" *ngFor="let element of viaggi">
+        <div class="row">
+            <div class="img">
+                <img src="{{element.img}}" class="img-fluid" width="80%">
+            </div>
+            <div class="info">
+                <p>destinazione: {{element.destinazione}}</p>
+                <p>sistema: {{element.sistema}}</p>
+                <p>durata: {{element.durata}}</p>
+                <p>costo: {{element.costo | currency: 'USD':'symbol'}}</p>
+            </div>
+            <div class="divisore">
+                <div class="text">
+                    <p>partenza: {{element.dataP | date: "medium"}}</p>
+                    <p>arrivo: {{element.dataA | date: "medium"}}</p>
+                    <p>distanza: {{element.distanza | number: '1.3-6'}} Anni luce</p>
+                    <p>compagnia: {{element.compagnia}}</p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <img id="sfondo" src="https://cdn.pixabay.com/photo/2019/01/02/02/37/background-3907905_1280.jpg" >
